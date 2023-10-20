@@ -34,7 +34,7 @@ scale_factor = st.slider("Adjust scaleFactor", 1.1, 2.0, 1.3)
 
 # Start face detection on camera stream
 if st.button('Start Camera'):
-    cascade_path = 'haarcascade_frontalface_default.xml'
+    cascade_path = './haarcascade_frontalface_default.xml'
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + cascade_path)
     video_capture = cv2.VideoCapture(0, cv2.CAP_DSHOW)  # or cv2.CAP_V4L2
 
